@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} title {% endblock %}
+
+{% block content %}
+
+<div class = "container">
+    <h1>DarkWebLinks</h1>
+    <br/><br/>
+   <!-- <form method="POST">
+      <input type="text" autofocus="autofocus" name="search_string">
+      <input type="submit" formaction="/srarch" value="Search">
+    </form>-->
+
+  </div>
+
+    <h1>Disclaimer:</h1>
+    <h5>All these a links may or may not work because I am exposing them not telling people to use them. I have taken the responsibility to expose them.</h5>
+    <h5>Do not visit the dark web, I know you won't listen to me check out the video, and do it at your own risk.</h5>
+    <h5>I am not resonsible for anything that happenes to you. Do not misuse the information present, these are public</h5>
+    <h5>dark web databases as well as dark web websites, please be careful when you visit the DarkWeb</h5>
+
+  </div>
+
+
+
+<div class = "container">
+    <h1>DarkWebLinks</h1>
+    <ol>
+    <p>
+      {% for link in links %}
+       <li> {{  link  }} </li>
+      {% endfor %}
+    </ol>
+    <br/>
+
+  {% endblock %}
