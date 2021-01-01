@@ -23,17 +23,17 @@ class users(db.Model):
 	def __repr__(self):
 		return 'Link< %r>' % self.id
 
-'''@app.route('/users', methods=['POST', 'GET'])
-def users():
+@app.route('/users', methods=['POST', 'GET'])
+def Friends():
 	title = "Register"
 
 	if request.method == 'POST':
-		friend_name = request.form['name']
+		friend_name = request.form['friend_name']
 		new_friend = Friends(name=friend_name)
 		# Push to database
 
 		try:
-			db.session.add(new_user)
+			db.session.add(new_friend)
 			db.session.commit()
 			return redirect('/users')
 
@@ -43,7 +43,12 @@ def users():
 
 
 	else:
-		return render_template("users.html", title = title, friends=friends)'''
+		return render_template("users.html", title = title, friends=friends)
+
+@app.route('/howto')
+def howto():
+	title = "How to visit the DarkWeb in the safest way"
+	return render_template("web.html", title = title)
 
 
 @app.route('/contact')
@@ -134,9 +139,9 @@ def form():
 	if not first_name or not last_name or not email:
 		error_statement = "All fields of the form are required..."
 		return render_template("fail.html", error_statement=error_statement)
-		'''first_name=first_name, 
+		first_name=first_name, 
 		last_name=last_name, 
-		email=email'''
+		email=email
 
 	subscribers.append(f"{first_name} {last_name} | {email}")
 	title = "Thank You for Subscribing"

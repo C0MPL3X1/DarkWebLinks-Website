@@ -7,16 +7,16 @@
     <h1>Register with your username in here...</h1>
     <br/>
     <form action="/users" METHOD="POST">
-        <input type="text" placeholder="Name" name="name">
+        <input type="text" placeholder="Name" name="friend_name">
         <input type="submit" value="Add Name" class="btn btn-primary">
     </form>
 {% friend in friends %}
 
-<h4>
+
     
     {{  friend.name  }}
 
-</h4>
+
 
 {% endfor %}
 
