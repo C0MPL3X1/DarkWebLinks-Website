@@ -74,12 +74,12 @@ def about():
 @app.route('/links', methods=['POST', 'GET'])
 def links():
 	title = "DarkWebLinks"
-	links = ["cnkj6nippubgycuj.onion/- Torch",
-	"dnmugu4755642434.onion/- Kilos ",
-	"msydqstlz2kzerdg.onion/- Ahima.fi",
-	"haystakvxad7wbk5.onion/- Haystack" ,
-	"reconponydonugup.onion/- Recon" ,
-	"http://torbuyxpe6auueywlctu4wz6ur3o5n2meybt6tyi4rmeudtjsysayqyd.onion/- Tor Buy", 
+	links = ["Torch: cnkj6nippubgycuj.onion",
+	"Kilos: dnmugu4755642434.onion",
+	"Ahima.fi: msydqstlz2kzerdg.onion",
+	"Haystack: haystakvxad7wbk5.onion" ,
+	"Recon: reconponydonugup.onion" ,
+	"Tor Buy: http://torbuyxpe6auueywlctu4wz6ur3o5n2meybt6tyi4rmeudtjsysayqyd.onion", 
 	"7yipwxdv5cfdjfpjztiz7sv2jlzzjuepmxy4mtlvuaojejwhg3zhliqd.onion/- White House Market" ,
 	"http://aoh5yljyr2gawvz6isodr3yp4wfb5ghml4bunjymys24vzxqqw6qhayd.onion/- Empire Market",
 	"Marketplace Commercial Services",
