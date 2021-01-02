@@ -23,7 +23,7 @@ class users(db.Model):
 	def __repr__(self):
 		return 'Link< %r>' % self.id
 
-@app.route('/users', methods=['POST', 'GET'])
+@app.route('/friends', methods=['POST', 'GET'])
 def Friends():
 	title = "Register"
 
