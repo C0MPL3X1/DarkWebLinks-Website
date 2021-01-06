@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %} title {% endblock %}
+
+<h4>
+    Regester here!!
+</h4>
+
+{% block content %}
+<!--<h1>Subscribe for updates on new links.</h1>-->
+
+    <br/><br/>
+
+<form method="post" >
+  <div class="col-md-4">
+    <!--Username: <br />
+    Password: <br />
+    Please repeat password: <br />-->
+ <div class="col-md-4">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name='E Mail'
+    value="{{ email }}">
+  </div>
+
+  <div class="mb-3">
+    
+    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Password" name='Password'
+    value="{{ Password }}">
+  </div>
+
+  <div class="mb-3">
+    
+    <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Repeat Password" name='Repeat Password'
+    value="{{ email }}">
+  </div>
+   <form method="post" >
+  <div class="col-md-4">
+ </div>
+ <br/>
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+
+{% endblock %}
