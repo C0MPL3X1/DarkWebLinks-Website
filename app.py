@@ -78,6 +78,9 @@ def about():
 def links():
 	title = "DarkWebLinks"
 	links = ["cnkj6nippubgycuj.onion /— Torch",
+	"http://bv42i2sn3p2nzxmhoqmmjaxf66onm6p7wpmtiuctnbus76ilxugx7wyd.onion/doku.php /— The Hidden Wiki"
+	"http://vlbva4lmlqkjuqrgmtiryofla7lrqc3wg6gagubehsqvoxxdvzyrdjad.onion /— Imperial Market"
+	"http://22pptkhbo775q4pc.onion /— The PayPal Plaza"
 	"dnmugu4755642434.onion /— Kilos",
 	"msydqstlz2kzerdg.onion /— Ahima.fi",
 	"haystakvxad7wbk5.onion /— Haystack" ,
