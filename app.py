@@ -144,7 +144,8 @@ def form():
 
 	if not first_name or not last_name or not email:
 		error_statement = "All fields of the form are required..."
-		return render_template("fail.html", error_statement=error_statement,first_name=first_name, last_name=last_name, email=email)
+		return render_template("fail.html", error_statement=error_statement,first_name=first_name, last_name=last_name,
+		email=email)
 		
 
 	subscribers.append(f"{first_name} {last_name} | {email}")
