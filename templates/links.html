@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block title %} title {% endblock %}
+<link rel="shortcut icon" type="image/jpg" href="D:\Darkweb-101\templates\favicon.png"/>
+
+{% block content %}
+
+<link rel="icon" type="image/png" href="/favicon.png"/>
+
+<div class = "container">
+    <h1>DarkWebLinks</h1>
+    <br/><br/>
+   <!-- <form method="POST">
+      <input type="text" autofocus="autofocus" name="search_string">
+      <input type="submit" formaction="/srarch" value="Search">
+    </form>-->
+
+  </div>
+
+    <h1>Disclaimer:</h1>
+    <h5>All these a links may or may not work because I am exposing them not telling people to use them. I have taken the responsibility to expose them.</h5>
+    <h5>Do not visit the dark web, I know you won't listen to me check out the "How to visit the DarkWeb in the safest way", and do it at your own risk.</h5>
+    <a href="https://darkweblinks.herokuapp.com/howto">
+      Link for this section
+    </a>
+    <h5>I am not resonsible for anything that happenes to you. Do not misuse the information present, these are public</h5>
+    <h5>dark web databases as well as dark web websites, please be careful "IF" you visit the DarkWeb</h5>
+    <!--<a href="https://www.youtube.com/channel/UC3pVgl7Xo7VYOb1WOqigQZA">
+    
+      Go to the YouTube Channel to see the video about "How to visit the DarkWeb in the safest way"
+    </a>-->
+
+  </div>
+
+
+
+<div class = "container">
+    <h1>DarkWebLinks</h1>
+    <ol>
+    <p>
+      {% for link in links %}
+       <li> {{  link  }} </li>
+      {% endfor %}
+    </ol>
+    <br/>
+
+  {% endblock %}
