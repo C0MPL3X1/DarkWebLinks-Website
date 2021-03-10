@@ -1,28 +1,25 @@
 from flask import Flask, render_template, request, redirect
 import smtplib
 from werkzeug.utils import import_string
-from flask_sqlalchemy import SQLAlchemy
+#from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
-
-SUBJECT = "Congratulations"
-TEXT = "You have been succesfully subscribed to my email newsletter"
 
 subscribers = []
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 #Initialize the database
-db = SQLAlchemy(app)
+#db = SQLAlchemy(app)
 
 #Create Database Model
-class Friends(db.Model):
+'''class Friends(db.Model):
 	id = db.Column(db.Integer, primary_key=True)
 	link = db.Column(db.String(200), nullable=False)
 	date_created = db.Column(db.DateTime, default=datetime.utcnow)
-# Create a function to return a string when we add something
+# Create a function to return a string when we add something'''
 
-	def __repr__(self):
-		return '<Name< %r>' % self.id
+	#def __repr__(self):
+	#	return '<Name< %r>' % self.id
 
 '''@app.route('/register', methods=['GET','POST'])
 def register():
@@ -132,13 +129,12 @@ def subscribe():
 
 @app.route('/form', methods=["POST"])
 def form():
+	SUBJECT = "Congratulations"
+	TEXT = "You have been succesfully subscribed to my email newsletter"
 	first_name = request.form.get("first_name")
 	last_name = request.form.get("last_name")
 	email = request.form.get("email")
-
-	subject = "Congratulations"
 	message = 'Subject: {}\n\n{}'.format(SUBJECT, TEXT)
-	#message = "You have been succesfully subscribed to my email newsletter"
 	server = smtplib.SMTP("smtp.gmail.com", 587)
 	server.starttls()
 	server.login("darkweb101pvtltd@gmail.com", "AdminisBoss")
