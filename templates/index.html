@@ -1,13 +1,14 @@
 {% extends 'base.html' %}
 {% block title %} title {% endblock %}
-<link rel="shortcut icon" type="image/png" href="/templates/favicon.png" >
+
+<link rel="shortcut icon" href="{{ url_for('favicon', filename='favicon.ico') }}">
 
 
 {% block content %}
 
 
 <div class = "container">
-    <h1>DarkWebLinks</h1>
+    <h1>DarkWeb101</h1>
     <br/><br/>
 
     <img src="static/images/image.png" width="700">
