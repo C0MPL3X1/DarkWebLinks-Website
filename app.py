@@ -48,7 +48,7 @@ def register():
 @app.route('/howto')
 def howto():
 	title = "How to visit the DarkWeb in the safest way"
-	return render_template("web.html", title = title)
+	return render_template("howto.html", title = title)
 
 
 @app.route('/contact')
