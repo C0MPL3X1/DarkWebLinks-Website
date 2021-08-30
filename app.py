@@ -138,7 +138,7 @@ def form():
 	message = 'Subject: {}\n\n{}'.format(SUBJECT, TEXT)
 	server = smtplib.SMTP("smtp.gmail.com", 587)
 	server.starttls()
-	server.login("darkweb101pvtltd@gmail.com", "AdminisBoss")
+	server.login("darkweb101pvtltd@gmail.com", "")
 	server.sendmail("DarkWebLinks", email, message)
 
 	if not first_name or not last_name or not email:
